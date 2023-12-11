@@ -1,0 +1,33 @@
+.block2__advantages {
+    display: flex;
+    text-align: center;
+    padding-top: 100px;
+ 
+
+    .block2__advantages__caption {
+        @include caption;
+        color: $hover;
+        padding-bottom: 16px;
+    }
+
+    .block2__advantages__header {
+        @include heading-2;
+        color: $dark-header;
+        padding-bottom: 40px;
+    }
+
+    .block2__advantages__content{
+        
+        .block2__advantages__content__header{
+            @include heading-6;
+            color: $dark-header;
+            padding-top: 32px;
+            padding-bottom: 20px
+        }
+        .block2__advantages__content__text{
+            @include body-6;
+            color: $dark-body;
+        }
+    }
+
+}

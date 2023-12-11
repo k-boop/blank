@@ -16,6 +16,11 @@
 // Utilities
 @import "bootstrap/scss/utilities/api";
 
+@import "./colors";
+
 .container{ 
     width: 1244px;
+}
+body{
+    background-color: $light10;  
 }

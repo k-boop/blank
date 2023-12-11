@@ -49,7 +49,7 @@
 @mixin heading-6 {
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 180%;
     /* 28.8px */
     letter-spacing: 0.16px;
@@ -76,6 +76,8 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.42px;
+    text-transform: uppercase;
+
 }
 
 @mixin body-1 {
