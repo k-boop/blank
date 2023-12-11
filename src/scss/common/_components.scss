@@ -1,0 +1,31 @@
+@import "./colors";
+@import "./fonts";
+
+.base-btn {
+    background-color: $base;
+    border-radius: 3px;
+    color: $white;
+    transition: 0.2s linear;
+    padding: 20px 36px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 80%;
+    text-decoration: none;
+    display: inline-block;
+
+    &.--small {
+        padding: 15px 20px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    &:hover {
+        background-color: $hover;
+    }
+
+    &:active {
+        background-color: $active;
+    }
+}
