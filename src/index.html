@@ -1,15 +1,58 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Vite</title>
-    <script type="module" src="./js/main.js"></script>
-  </head>
-  <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap w/ Vite</title>
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-xl-3">
+          <div class="header__logo">
+            <img src="logo.png">
+          </div>
+        </div>
+        <div class="col-xl-6 ">
+          <ul class="header__inf__btns">
+            <li><a href="">Про нас</a></li>
+            <li><a href="">Послуги</a></li>
+            <li><a href="">Галузі</a></li>
+            <li><a href="">Команда</a></li>
+            <li><a href="">Кейси</a></li>
+            <li><a href="">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 d-flex justify-content-end">
+
+          <a class="base-btn --small" href="">Зв’язатися з нами</a>
+
+
+        </div>
+      </div>
     </div>
-  </body>
+  </header>
+  <div class="block1__headerinfo">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-xl-6 d-flex align-items-center center">
+          <div class="block1__headerinfo__content">
+            <h1>Професійний аутсорсинг у сфері фінансів</h1>
+            <p class="headerinfo__text"> Робіть бізнес ефективнішим і легшим разом з Astra Nuvo, де професіоналізм в
+              поєднанні з віддаленим обслуговуванням є ключем до вашого успіху!</p>
+            <div class="d-flex justify-content-center">
+              <a class="base-btn" href="">Замовити послугу</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="height: 2000px"></div>
+</body>
+
 </html>
