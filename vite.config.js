@@ -3,7 +3,6 @@ import { defineConfig } from 'vite';
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
 
 export default defineConfig ({
-  base: '/astra_nuvo/',
   root: path.resolve(__dirname, 'src'),
   build: {
     outDir: '../dist',

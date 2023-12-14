@@ -3,12 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://k-boop.github.io/astra_nuvo/",
   "scripts": {
     "dev": "vite",
     "build": "vite --emptyOutDir build",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build -- --base=/astra_nuvo/",
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
