@@ -3,14 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://k-boop.github.io/astra_nuvo/",
   "scripts": {
     "dev": "vite",
     "build": "vite --emptyOutDir build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
-    "jquery": "^3.7.1",
     "fast-glob": "^3.3.2",
+    "gh-pages": "^6.1.0",
+    "jquery": "^3.7.1",
     "sass": "^1.69.5",
     "vite": "^5.0.0",
     "vite-plugin-svg-icons": "^2.0.1"
