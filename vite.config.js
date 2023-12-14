@@ -5,7 +5,16 @@ import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
 export default defineConfig ({
   root: path.resolve(__dirname, 'src'),
   build: {
-    outDir: '../dist'
+    outDir: '../dist',
+    rollupOptions: {
+      external: ['jquery'],
+      output: {
+        format: 'iife',
+        globals: {
+          jquery: '$'
+        }
+      }
+    }
   },
   server: {
     port: 8080
