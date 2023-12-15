@@ -9,7 +9,7 @@ export default defineConfig ({
     rollupOptions: {
       external: ['jquery'],
       output: {
-        format: 'iife',
+        // format: 'iife',
         globals: {
           jquery: '$'
         }
