@@ -6,10 +6,11 @@ export default defineConfig ({
   root: path.resolve(__dirname, 'src'),
   build: {
     outDir: '../dist',
+    cssCodeSplit: false,
     rollupOptions: {
       external: ['jquery'],
       output: {
-        // format: 'iife',
+        format: 'iife',
         globals: {
           jquery: '$'
         }
