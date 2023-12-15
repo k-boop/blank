@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "vite --emptyOutDir build",
     "preview": "vite preview",
-    "predeploy": "npm run build -- --base=/astra_nuvo/",
-    "deploy": "git checkout main && gh-pages -d dist"
+    "predeploy": "git checkout main && npm run build -- --base=/astra_nuvo/",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "fast-glob": "^3.3.2",
