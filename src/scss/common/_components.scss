@@ -64,6 +64,7 @@
         padding: 0;
         margin-right: 35px;
 
+
         &::after {
             content: '';
             border-radius: 3px;
@@ -91,6 +92,7 @@
         .base__info__constructor__img__src {
             overflow: hidden;
             border-radius: 3px;
+            background: linear-gradient(133deg, #F1F7FF 0%, rgba(229, 240, 255, 0.65) 48.96%, rgba(184, 204, 228, 0.65) 100%);
 
             img {
                 width: 100%;
@@ -106,20 +108,8 @@
 
         .base__info__constructor__caption {
             @include caption;
-            color: $hover;
             padding-bottom: 16px;
         }
 
-        .base__info__constructor__header {
-            @include heading-2;
-            color: $dark-header;
-
-        }
-
-        .base__info__constructor __text {
-            @include body-4;
-            color: $dark-body;
-
-        }
     }
 }

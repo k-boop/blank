@@ -1,0 +1,45 @@
+.block12__contacts {
+    padding-top: 120px;
+    p {
+        font-size: 16px;
+        padding-bottom: 24px;
+    }
+
+    .block12__contacts__c {
+        display: flex;
+        flex-wrap: wrap;
+
+        .block12__contacts__content {
+            margin-bottom: 80px;
+            width: 50%;
+            flex-shrink: 1;
+
+            .block12__contacts__content__logo {
+                svg {
+                    margin-bottom: 20px;
+                    width: 32px;
+                    height: 32px;
+                }
+
+            }
+
+            .block12__contacts__content__text {
+                color: $dark-body;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 180%;
+                .pn{
+                    font-family: 'Nunito Sans';
+                    color: rgba(0, 16, 86, 0.75);
+                }
+                padding-bottom: 8px;
+                
+                a{
+                    text-decoration: none;
+                    color: $dark-body;
+                }
+            }
+        }
+
+    }
+}
