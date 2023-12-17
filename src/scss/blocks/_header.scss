@@ -1,4 +1,9 @@
+$maxblock1-height: 846px;
+$maxblock1-wigth: 1440px;
+    
+
 .header {
+    z-index: 10;
     position: fixed;
     width: 100%;
     padding: 12px 0;
@@ -25,7 +30,7 @@
 
     .header__logo {
         height: 40px;
-        width: 85px;
+        width: 85px;    
     }
 
     .header__inf__btns {
@@ -58,9 +63,27 @@
 }
 
 .block1__headerinfo {
+    z-index: 1;
+    position: relative;
+
+    .block1__headerinfo__arrows {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        bottom: calc((44px * 100vh) / $maxblock1-height);
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: calc((308px * 100vh) / $maxblock1-height);
+        width: calc((570px *100vw) / $maxblock1-wigth);
+
+        .svg-icon {
+            height: 100%;
+        }
+    }
+
     .container {
         display: flex;
-        height: 100%;
+        min-height: inherit;
         padding-top: 65px;
     }
 
@@ -71,6 +94,9 @@
     background-position: center center;
 
     .block1__headerinfo__content {
+        padding: 30px 0;
+        z-index: 1;
+
         h1 {
             text-align: center;
             @include heading-1;

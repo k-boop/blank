@@ -1,0 +1,62 @@
+.block3__aboutus {
+    padding-top: 60px;
+    padding-bottom: 180px;
+}
+
+.base__info__constructor {
+    display: flex;
+    .base__info__constructor__caption {
+        @include caption;
+        color: $hover;
+        padding-bottom: 16px;
+    }
+
+    .base__info__constructor__header {
+        @include heading-2;
+        color: $dark-header;
+
+    }
+
+    .base__info__constructor__text {
+        @include body-4;
+        color: $dark-body;
+
+    }
+
+    .block3__aboutus__grades {
+        color: $dark-header;
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+        .block3__aboutus__grades__item {
+            @include body-3;
+            border-right: 1px solid $base;
+            padding: 24px 16px;
+            margin-top: 36px;
+
+            &:last-child {
+                border-right: none;
+            }
+
+            h4 {
+                @include heading-2;
+                color: $dark-header;
+            }
+
+        }
+
+
+    }
+
+    .base__info__constructor__content {
+        @include body-3;
+        color: $dark-header;
+
+        h3 {
+            @include heading-2;
+            margin-bottom: 24px;
+            color: $dark-body;
+        }
+    }
+}
