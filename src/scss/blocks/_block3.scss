@@ -1,25 +1,23 @@
 .block3__aboutus {
-    padding-top: 60px;
-    padding-bottom: 180px;
+    padding-top: 120px;
+    padding-bottom: 60px;
 }
 
 .base__info__constructor {
     display: flex;
+
     .base__info__constructor__caption {
         @include caption;
-        color: $hover;
         padding-bottom: 16px;
     }
 
     .base__info__constructor__header {
         @include heading-2;
-        color: $dark-header;
 
     }
 
     .base__info__constructor__text {
         @include body-4;
-        color: $dark-body;
 
     }
 

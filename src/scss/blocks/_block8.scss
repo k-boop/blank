@@ -1,0 +1,44 @@
+.block8__industry {
+    padding-top: 120px;
+    text-align: center;
+    .block8__industry__c{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1204px;
+        gap: 80px 0;
+        
+    }
+
+    .block8__industry__caption {
+
+        @include caption;
+        padding-bottom: 16px;
+    }
+
+    .block8__industry__header {
+
+        @include heading-2;
+        padding-bottom: 80px;
+    }
+
+    svg {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .block8__industry__content {
+        padding-left: 17px;
+        padding-right: 17px;
+        width: #{100% * 0.2};
+        flex-shrink: 1;
+ 
+        .block8__industry__content__text {
+            @include heading-8;
+            color: $dark-body;
+            text-transform: uppercase;
+
+        }
+    }
+
+}
