@@ -1,6 +1,8 @@
 import path from 'path';
 import { defineConfig } from 'vite';
+import viteImagemin from 'vite-plugin-imagemin';
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
+import viteHtmlResolveAlias from './dev-utils/vite-plugin-html-resolve-alias';
 
 export default defineConfig ({
   root: path.resolve(__dirname, 'src'),
@@ -17,10 +19,17 @@ export default defineConfig ({
       }
     }
   },
+  resolve: {
+    alias: {
+        '../assets/images': path.resolve(__dirname, 'src/assets/images/')
+    }
+},
   server: {
     port: 8080
   },
   plugins: [
+    viteHtmlResolveAlias(),
+    viteImagemin(),
     createSvgIconsPlugin({
       iconDirs: [path.resolve(__dirname, 'src/assets/svg')],
       symbolId: 'icon-[name]',
