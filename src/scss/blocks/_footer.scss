@@ -1,8 +1,22 @@
+@include media-breakpoint-down(xl){
+    .footer__top{
+        display: none!important;
+    }
+  
+}
+@include media-breakpoint-down(md){
+    .footer__bottom{
+        .footer__img__wrapper{
+            display: none!important;
+        }
+    }
+}
 .footer {
     margin-top: 80px;
     background: linear-gradient(180deg, #F1F7FF 0%, rgba(241, 247, 255, 0.00) 100%);
     width: 100%;
     position: relative;
+
     &:after {
         content: '';
         height: 1px;
@@ -20,10 +34,12 @@
     .footer__bottom {
         position: relative;
         padding: 28px 0;
-        p{
+
+        p {
             @include body-8;
             margin: 0;
         }
+
         &:before {
             content: '';
             height: 1px;
@@ -53,6 +69,7 @@
 
         .footer__img__wrapper {
             padding-right: 0;
+
             a {
                 text-decoration: none;
                 margin-right: 16px;
@@ -66,7 +83,7 @@
                     fill: $dark-header;
                     width: 20px;
                     height: 20px;
-                    transition: 0.3s linear;
+                    transition: 0.25s linear;
 
                     &:hover {
                         fill: $hover;
@@ -119,8 +136,6 @@
 
 
     }
-
-
 
 
 }

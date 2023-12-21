@@ -1,6 +1,19 @@
+@include media-breakpoint-down(xl) {
+    .block4__services { 
+        padding-top: 60px !important;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .block4__services__content__accordion__content {
+        padding: 32px 20px 32px 0 !important;
+    }
+
+}
+
 .block4__services {
     padding-top: 120px;
-    
+
 
     .block4__services__content__caption {
         @include caption;
@@ -31,6 +44,7 @@
                 background: linear-gradient(180deg, #F1F7FF 0%, rgba(241, 247, 255, 0.10) 171.05%);
                 font-size: 17px;
                 font-weight: 500;
+
                 &::after {
                     opacity: 1;
                 }
@@ -107,6 +121,7 @@
             }
 
             p {
+                max-width: 81%;
                 margin: 0;
             }
 

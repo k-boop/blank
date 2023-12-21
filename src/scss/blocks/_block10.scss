@@ -1,8 +1,21 @@
+@include media-breakpoint-down(xl) {
+    .block10__team{
+        padding-top: 60px!important;
+    }
+}
 .block10__team {
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 120px;
-    padding-bottom: 60px;
-
-    .block10__team__img__wrapper {
+    padding-bottom: 70px;
+    .team1{
+        margin-left: 15px;
+        
+    }   
+    .team2{
+        margin-right: 15px;
+    }
+    &__img__wrapper {
         a {
             text-decoration: none;
             margin-right: 16px;
@@ -27,7 +40,7 @@
 
     }
 
-    .block10__team__tittle {
+    &__tittle {
         text-align: center;
 
         .block10__team__tittle__caption {
@@ -42,30 +55,56 @@
 
         .block10__team__tittle__text {
             @include body-1;
-            padding-bottom: 68px;
             line-height: 180%;
         }
     }
 
-    h3 {
-        @include heading-4;
-        padding-bottom: 24px;
-        color: $dark-body;
-    }
+    
 
-    p {
-        @include body-4;
-        padding-bottom: 36px;
-    }
-
-    .block10__team__content__caption {
+    &__content__caption {
         @include caption;
         text-transform: none;
         padding-bottom: 32px;
         font-weight: 400;
     }
 
-    .block10__team__first {
+    &__first {
         padding-bottom: 140px;
+    }
+}
+
+.block10__team__first{
+    @include media-breakpoint-down(xl){
+        padding-bottom: 80px!important;
+    }
+    h3 {
+        @include heading-4;
+        padding-bottom: 8px;
+        color: $dark-body;
+        text-transform: uppercase;
+        line-height: 30px;
+        margin: 0;
+    }
+
+    p {
+        @include body-4;
+        margin-bottom: 0;
+        line-height: 180%
+    }
+}
+.block10__team__second{
+    h3 {
+        @include heading-4;
+        padding-bottom: 8px;
+        color: $dark-body;
+        text-transform: uppercase;
+        line-height: 30px;
+        margin: 0;
+    }
+
+    p {
+        @include body-4;
+        margin-bottom: 0;
+        line-height: 180%
     }
 }
