@@ -8,9 +8,9 @@
     }
 }
 }.block11__cases {
-    padding-top: 120px;
+    padding-top: 180px;
     p{
-       max-width: 81%;
+       max-width: 82%;
     }
     .block11__cases__content__caption {
         @include caption;
@@ -108,14 +108,16 @@
                 left: 0;
             }
 
-            &:hover {
-                background: linear-gradient(180deg, #F1F7FF 0%, rgba(241, 247, 255, 0.10) 171.05%);
-                font-size: 17px;
-                font-weight: 500;
-
-                .block11__cases__content__accordion__arrow {
-                    stroke-width: 2;
-                    transition: 0.4s;
+            @include media-breakpoint-up(xl){
+                &:hover {
+                    background: linear-gradient(180deg, #F1F7FF 0%, rgba(241, 247, 255, 0.10) 171.05%);
+                    font-size: 17px;
+                    font-weight: 500;
+    
+                    .block11__cases__content__accordion__arrow {
+                        stroke-width: 2;
+                        transition: 0.4s;
+                    }
                 }
             }
 

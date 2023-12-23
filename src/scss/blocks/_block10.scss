@@ -1,20 +1,78 @@
 @include media-breakpoint-down(xl) {
-    .block10__team{
-        padding-top: 60px!important;
+    .block10__team {
+        padding-top: 60px !important;
+
+    }
+
+    .block10__phone__desktop {
+        display: none !important;
     }
 }
+
+.block10__phone__mobile {
+    display: inline-flex;
+    margin-right: 16px;
+    @include media-breakpoint-up(xl) {
+        display: none !important;
+    }
+}
+
+.block10__phone__desktop {
+    display: inline-flex;
+
+    .block10__phohenumber1 {
+        font-size: 16px;
+        position: absolute;
+        margin-top: 45px;
+        color: $dark-body;
+        font-family: 'Nunito Sans';
+
+        &:hover {
+            color: $hover;
+            transition: 0.2s linear;
+        }
+
+        display: none;
+
+        &.--active {
+            display: block;
+        }
+    }
+    .block10__phohenumber2 {
+        font-size: 16px;
+        position: absolute;
+        margin-top: 45px;
+        color: $dark-body;
+        font-family: 'Nunito Sans';
+
+        &:hover {
+            color: $hover;
+            transition: 0.2s linear;
+        }
+
+        display: none;
+
+        &.--active {
+            display: block;
+        }
+    }
+}
+
 .block10__team {
     padding-left: 0;
     padding-right: 0;
     padding-top: 120px;
     padding-bottom: 70px;
-    .team1{
+
+    .team1 {
         margin-left: 15px;
-        
-    }   
-    .team2{
+
+    }
+
+    .team2 {
         margin-right: 15px;
     }
+
     &__img__wrapper {
         a {
             text-decoration: none;
@@ -33,7 +91,7 @@
 
                 &:hover {
                     fill: $hover;
-                }   
+                }
 
             }
         }
@@ -59,7 +117,7 @@
         }
     }
 
-    
+
 
     &__content__caption {
         @include caption;
@@ -73,10 +131,11 @@
     }
 }
 
-.block10__team__first{
-    @include media-breakpoint-down(xl){
-        padding-bottom: 80px!important;
+.block10__team__first {
+    @include media-breakpoint-down(xl) {
+        padding-bottom: 80px !important;
     }
+
     h3 {
         @include heading-4;
         padding-bottom: 8px;
@@ -92,7 +151,8 @@
         line-height: 180%
     }
 }
-.block10__team__second{
+
+.block10__team__second {
     h3 {
         @include heading-4;
         padding-bottom: 8px;
