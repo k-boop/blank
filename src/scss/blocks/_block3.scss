@@ -1,37 +1,40 @@
-.block3__aboutus {
-    padding-top: 120px;
-    padding-bottom: 60px;
-}
-
-.base__info__constructor {
-    display: flex;
-
-    .base__info__constructor__caption {
-        @include caption;
-        padding-bottom: 16px;
+    @include media-breakpoint-down(xl) {
+        .block3__aboutus {
+            padding-top: 60px !important;
+        }
     }
 
-    .base__info__constructor__header {
-        @include heading-2;
-
+    .block3__aboutus {
+        padding-top: 120px;
+        padding-bottom: 60px;
     }
 
-    .base__info__constructor__text {
-        @include body-4;
 
-    }
 
     .block3__aboutus__grades {
         color: $dark-header;
         text-align: center;
-        display: grid;
-        grid-template-columns: auto auto auto;
+        display: flex;
+        @include media-breakpoint-down(md) {
+            justify-content: center;
+        }
+    
+        @include media-breakpoint-down(xl) {
+            flex-wrap: wrap; 
+        }
 
         .block3__aboutus__grades__item {
+
+            @include media-breakpoint-down(md) {
+                border-right: none;
+                padding: 0;
+                width: 50%!important;
+            } 
+
             @include body-3;
             border-right: 1px solid $base;
             padding: 24px 16px;
-            margin-top: 36px;
+            width: 33%;
 
             &:last-child {
                 border-right: none;
@@ -40,6 +43,7 @@
             h4 {
                 @include heading-2;
                 color: $dark-header;
+
             }
 
         }
@@ -48,13 +52,19 @@
     }
 
     .base__info__constructor__content {
-        @include body-3;
+
         color: $dark-header;
 
         h3 {
             @include heading-2;
             margin-bottom: 24px;
             color: $dark-body;
+            line-height: 48px;
+        }
+
+        p {
+            @include body-4;
+            line-height: 28.8px;
+            margin-bottom: 0;
         }
     }
-}

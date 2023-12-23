@@ -1,3 +1,9 @@
+@include media-breakpoint-down(xl) {
+    .block2__advantages {
+        padding-top: 60px!important;
+    }
+}
+
 .block2__advantages {
     display: flex;
     text-align: center;
@@ -31,6 +37,8 @@
         .block2__advantages__content__text {
             @include body-6;
             padding: 0 44px;
+            font-size: 14px;
+            line-height: 25px;
         }
     }
 

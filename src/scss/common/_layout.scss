@@ -20,9 +20,10 @@ $grid-gutter-width: 30px;
 
 @import "./colors";
 
-.container{ 
-    width: 1244px;
+.container-fluid{ 
+    max-width: 1244px;
 }
-body{
+body, html{
+    overflow-x: hidden;
     background-color: $light10;  
 }

@@ -1,8 +1,21 @@
+@include media-breakpoint-down(xl) {
+    .block12__contacts{
+        padding-top: 60px!important;
+    }
+}
 .block12__contacts {
+    .base__info__constructor__content{
+        margin-bottom: 10px;
+    }
+    h3{
+        line-height: 50px;
+   }    
     padding-top: 120px;
     p {
+        @include body-4;
         font-size: 16px;
         padding-bottom: 24px;
+       
     }
 
     .block12__contacts__c {
@@ -10,10 +23,11 @@
         flex-wrap: wrap;
 
         .block12__contacts__content {
-            margin-bottom: 80px;
+            margin-bottom: 45px;
             width: 50%;
             flex-shrink: 1;
 
+             
             .block12__contacts__content__logo {
                 svg {
                     margin-bottom: 20px;
