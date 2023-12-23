@@ -91,7 +91,11 @@
 
                 &:hover {
                     fill: $hover;
+                    @include media-breakpoint-down(xl){
+                    fill: none;
+                    }
                 }
+              
 
             }
         }
