@@ -47,7 +47,10 @@ $(function () {
         $('.menu-btn').toggleClass('--active');
         $('.menu').toggleClass('--active');
     });
-    
+    $('.menu').on('click', function () {
+        $('.menu-btn').removeClass('--active');
+        $('.menu').removeClass('--active');
+    });
     $('.block10__phohenumber__btn1').on('click', function (e) {
         e.preventDefault();
         $('.block10__phohenumber1').slideToggle(300).toggleClass('--active');

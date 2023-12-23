@@ -3,9 +3,7 @@ $maxblock1-wigth: 1440px;
 
 @include media-breakpoint-down(xl) {
     .block1__headerinfo {
-        .container-fluid {
             padding-top: 0 !important;
-        }
     }
 }
 
