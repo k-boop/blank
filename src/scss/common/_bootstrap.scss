@@ -5,8 +5,8 @@
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
 
-$grid-breakpoints: map-remove($grid-breakpoints, "sm", "lg", "xxl");
-$container-max-widths: map-remove($container-max-widths, "sm", "lg", "xxl");
+$grid-breakpoints: map-remove($grid-breakpoints, "lg", "xxl");
+$container-max-widths: map-remove($container-max-widths, "lg", "xxl");
 
 @import "bootstrap/scss/reboot";
 @import "bootstrap/scss/containers";
