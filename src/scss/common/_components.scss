@@ -148,13 +148,13 @@
         @include caption;
         padding-bottom: 16px;
         @include media-breakpoint-down(md){
-            font-size: 16px;
+            font-size: 14px;
         }
     }
         h3{
         @include media-breakpoint-down(md){
             font-size: 28px!important;
-            line-height: 30px!important;
+            line-height: 40px!important;
         }
     }
         p{
@@ -165,4 +165,19 @@
 
 
 }
+.team1{
+    h3{
+        @include media-breakpoint-down(md){
+            font-size: 24px!important;
+        }     
+    }
 
+}
+.team2{
+    h3{
+        @include media-breakpoint-down(md){
+            font-size: 24px!important;
+        }     
+    }
+
+}

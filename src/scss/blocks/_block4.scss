@@ -20,7 +20,7 @@
         text-align: center;
         padding-bottom: 16px;
         @include media-breakpoint-down(md){
-            font-size: 16px;
+            font-size: 14px;
         }
     }
 
@@ -30,7 +30,7 @@
         padding-bottom: 60px;
         @include media-breakpoint-down(md){
             font-size: 28px;
-            line-height: 30px;
+            line-height: 40px;
         }
     }
 
