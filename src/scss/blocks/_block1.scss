@@ -288,7 +288,6 @@ $maxblock1-wigth: 1440px;
             @include media-breakpoint-down(md) {
                 font-size: 16px;
                 line-height: 155%;
-                letter-spacing: unset;
             }
         }
     }
