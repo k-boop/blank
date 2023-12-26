@@ -1,12 +1,12 @@
-@include media-breakpoint-down(xl) {
+@include media-breakpoint-down(md) {
     .block4__services { 
-        padding-top: 80px !important;
+        padding-top: 60px !important;
     }
 }
 
 @include media-breakpoint-down(md) {
     .block4__services__content__accordion__content {
-        padding: 32px 20px 32px 0 !important;
+        padding: 26px 20px 26px 0 !important;
     }
 
 }
@@ -19,12 +19,18 @@
         @include caption;
         text-align: center;
         padding-bottom: 16px;
+        @include media-breakpoint-down(md){
+            font-size: 12px;
+        }
     }
 
     .block4__services__content__header {
         @include heading-2;
         text-align: center;
         padding-bottom: 60px;
+        @include media-breakpoint-down(md){
+            font-size: 24px;
+        }
     }
 
     .block4__services__accordion {
@@ -79,6 +85,26 @@
             ul {
                 margin-bottom: 0;
             }
+            ul {
+                list-style-type: none;
+                padding: 0;
+              }
+              
+              ul li {
+                position: relative;
+                padding-left: 20px; /* Регулируйте отступ под свой маркер */
+              }
+              
+              ul li::before {
+                content: '\2022'; /* Юникод для круглой точки */
+                font-size: 15px; /* Размер маркера */
+                color: #000; /* Цвет маркера */
+                position: absolute;
+                left: 0;
+                @include media-breakpoint-down(md){
+                    left: 2%;
+                }       
+              }
         }
 
         .block4__services__content__accordion__btn {
@@ -88,15 +114,16 @@
             @include heading-7;
             font-weight: 400;
             justify-content: space-between;
-            padding: 32px 20px;
+            padding: 26px 20px;
             color: $dark-body;
             text-transform: uppercase;
             transition: 0.2s linear;
             cursor: pointer;
+            
 
             &:after {
                 content: '';
-                height: 2px;
+                height: 1px;
                 display: block;
                 background: linear-gradient(90deg,
                         rgba($base, 1) 40%,

@@ -13,11 +13,18 @@
     .block2__advantages__caption {
         @include caption;
         padding-bottom: 16px;
+        @include media-breakpoint-down(md){
+            font-size: 12px;
+        }
     }
 
     .block2__advantages__header {
         @include heading-2;
         padding-bottom: 40px;
+        @include media-breakpoint-down(md){
+            font-size: 24px;
+        }
+  
     }
 
     .block2__advantages__content {

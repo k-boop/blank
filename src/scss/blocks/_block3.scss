@@ -1,19 +1,40 @@
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(md) {
         .block3__aboutus {
-            padding-top: 80px !important;
+            padding-top: 60px !important;
         }
     }
 
     .block3__aboutus {
         padding-top: 120px;
-        padding-bottom: 60px;
+        padding-bottom: 40px;
+        p{
+            text-align: center!important;
+        }
     }
 
 
 
     .block3__aboutus__grades {
+       
+        @include media-breakpoint-down(md){
+            row-gap: 20px;
+            p{
+                margin-bottom: 0;
+           
+            }
+            .block3__gitem1{
+                order: 1;
+                border-right: 1px solid $base!important; 
+            }
+            .block3__gitem2{
+                order: 3;
+            }
+            .block3__gitem3{
+                order: 2;
+            }
+        }
         color: $dark-header;
-        text-align: center;
+
         display: flex;
         @include media-breakpoint-down(md) {
             justify-content: center;
@@ -43,11 +64,13 @@
             h4 {
                 @include heading-2;
                 color: $dark-header;
-
+                text-align: center!important;
             }
 
         }
-
+        p{
+            text-align: center!important;
+        }
 
     }
 
