@@ -1,4 +1,4 @@
-@include media-breakpoint-down(xl) {
+@include media-breakpoint-down(md) {
     .block8__industry{
         padding-top: 80px!important;
     }
@@ -23,13 +23,17 @@
     }
 
     .block8__industry__caption {
-
+        @include media-breakpoint-down(md){
+            font-size: 12px;
+        }
         @include caption;
         padding-bottom: 16px;
     }
 
     .block8__industry__header {
-
+        @include media-breakpoint-down(md){
+            font-size: 24px;
+        }
         @include heading-2;
         padding-bottom: 80px;
     }
@@ -38,6 +42,10 @@
         width: 40px;
         height: 40px;
         margin-bottom: 20px;
+        @include media-breakpoint-down(md){
+            width: 30px;
+            height: 30px;
+        }
     }
 
     .block8__industry__content {

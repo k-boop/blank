@@ -1,4 +1,4 @@
-@include media-breakpoint-down(xl) {
+@include media-breakpoint-down(md) {
     .block9__process{
         padding-top: 80px!important;
     }
@@ -10,11 +10,17 @@
     .block9__process__caption {
         @include caption;
         padding-bottom: 16px;
+        @include media-breakpoint-down(md){
+            font-size: 12px;
+        }
     }
 
     .block9__process__header {
         @include heading-2;
         padding-bottom: 40px;
+        @include media-breakpoint-down(md){
+            font-size: 24px;
+        }
     }
 
     .block9__process__content {
@@ -43,5 +49,9 @@
     .block9__process__content__logo {
         width: 34px;
         height: 22px;
+        @include media-breakpoint-up(xxl){
+            width: 38px;
+            height: 26px;
+        }
     }
 }

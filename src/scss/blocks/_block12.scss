@@ -1,6 +1,6 @@
-@include media-breakpoint-down(xl) {
+@include media-breakpoint-down(md) {
     .block12__contacts{
-        padding-top: 80px!important;
+        padding-top: 40px!important;
     }
 }
 .block12__contacts {
@@ -15,6 +15,9 @@
         @include body-4;
         font-size: 16px;
         padding-bottom: 24px;
+        @include media-breakpoint-down(xl){
+            text-align: center!important;
+        }
        
     }
 
@@ -26,13 +29,22 @@
             margin-bottom: 45px;
             width: 50%;
             flex-shrink: 1;
-
+            @include media-breakpoint-up(xl){
+                &:nth-child(even){
+                    padding-left: 20px;
+                }
+            }
+      
              
             .block12__contacts__content__logo {
                 svg {
                     margin-bottom: 20px;
                     width: 32px;
                     height: 32px;
+                    @include media-breakpoint-down(md){
+                        width: 28px;
+                        height: 28px;
+                    }
                 }
 
             }

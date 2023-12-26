@@ -1,4 +1,4 @@
-@include media-breakpoint-down(xl) {
+@include media-breakpoint-down(md) {
     .block5__consultations{
         margin-top: 80px!important;
     }
@@ -7,6 +7,9 @@
     margin-top: 120px;
     position: relative;
     background-image: linear-gradient(90deg, rgba(241, 247, 255, 0.00) 0%, rgba(241, 247, 255, 0.85) 20.73%, #F1F7FF 51.56%, rgba(241, 247, 255, 0.85) 79.58%, rgba(241, 247, 255, 0.00) 100%), url("../assets/images/block5-img.png");
+    @include media-breakpoint-down(md){
+        background-image: linear-gradient(90deg, rgba(241, 247, 255, 0.00) 0%, rgba(241, 247, 255, 0.85) 15%, #F1F7FF 51.56%, rgba(241, 247, 255, 0.85) 85%, rgba(241, 247, 255, 0.00) 100%), url("../assets/images/block5-img.png");
+    }
     min-height: 100%;
     background-size: cover;
     background-position: center center;

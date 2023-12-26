@@ -1,4 +1,4 @@
-@include media-breakpoint-down(xl) {
+@include media-breakpoint-down(md) {
     .block11__cases{
         padding-top: 80px!important;
     }
@@ -16,12 +16,19 @@
         @include caption;
         text-align: center;
         padding-bottom: 16px;
+        @include media-breakpoint-down(md){
+            font-size: 12px;
+        }
+
     }
 
     .block11__cases__content__header {
         @include heading-2;
         text-align: center;
         padding-bottom: 60px;
+        @include media-breakpoint-down(md){
+            font-size: 24px;
+        }
     }
 
     .block11__cases__accordion {
@@ -72,12 +79,35 @@
                 }
             }
             .lstn{
+                &::before{
+                    display: none;
+                }
                 list-style-type: none;
             }
             ul {
                 max-width: 728px;
                 margin-bottom: 0;
             }
+            ul {
+                list-style-type: none;
+                padding: 0;
+              }
+              
+              ul li {
+                position: relative;
+                padding-left: 20px; /* Регулируйте отступ под свой маркер */
+              }
+              
+              ul li::before {
+                content: '\2022'; /* Юникод для круглой точки */
+                font-size: 15px; /* Размер маркера */
+                color: #000; /* Цвет маркера */
+                position: absolute;
+                left: 0;
+                @include media-breakpoint-down(md){
+                    left: 2%;
+                }         
+              }
         }
 
         .block11__cases__content__accordion__btn {
@@ -95,7 +125,7 @@
 
             &:after {
                 content: '';
-                height: 2px;
+                height: 1px;
                 display: block;
                 background: linear-gradient(90deg,
                         rgba($base, 1) 40%,
@@ -122,6 +152,7 @@
             }
 
             p {
+                line-height: 150%;
                 margin: 0;
             }
 
