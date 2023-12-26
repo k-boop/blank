@@ -284,6 +284,7 @@ $maxblock1-wigth: 1440px;
             color: $dark-header;
             padding-bottom: 36px;
             margin: 0;
+            line-height: 30px;
 
             @include media-breakpoint-down(md) {
                 font-size: 16px;
