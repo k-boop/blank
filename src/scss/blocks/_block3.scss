@@ -3,12 +3,22 @@
             padding-top: 60px !important;
         }
     }
+    @include media-breakpoint-up(xl){
+        .block3__aboutus{
+            p{
+                text-align: start!important;
+            }
+        }
+    }
 
     .block3__aboutus {
         padding-top: 120px;
-        p{
-            text-align: center!important;
+        @include media-breakpoint-down(xl){
+            p{
+                text-align: center!important;
+            }
         }
+  
     }
 
 
