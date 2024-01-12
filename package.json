@@ -1,5 +1,5 @@
 {
-  "name": "astra_nuvo",
+  "name": "blank",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite --emptyOutDir build",
     "preview": "vite preview",
-    "predeploy": "git checkout main && npm run build -- --base=/astra_nuvo/",
+    "predeploy": "git checkout main && npm run build -- --base=/blank/",
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
