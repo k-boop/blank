@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite --emptyOutDir build",
     "preview": "vite preview",
     "predeploy": "git checkout main && npm run build -- --base=/blank/",
-    "deploy": "npm run build && npm run copy-html",
+    "deploy": "gh-pages -d dist",
     "copy-html": "copyfiles -u 1 'src/**/*.html' dist"
   },
   "devDependencies": {
