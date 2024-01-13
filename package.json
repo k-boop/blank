@@ -8,9 +8,11 @@
     "build": "vite --emptyOutDir build",
     "preview": "vite preview",
     "predeploy": "git checkout main && npm run build -- --base=/blank/",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "copy-html": "copyfiles -u 1 'src/**/*.html' dist"
   },
   "devDependencies": {
+    "copyfiles": "^2.4.1",
     "fast-glob": "^3.3.2",
     "gh-pages": "^6.1.0",
     "jquery": "^3.7.1",
