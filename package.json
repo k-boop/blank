@@ -8,7 +8,7 @@
     "build": "vite --emptyOutDir build",
     "preview": "vite preview",
     "predeploy": "git checkout main && npm run build -- --base=/blank/ && npm run copy-html",
-    "copy-html": "copyfiles -u 1 'src/.html' dist",
+    "copy-html": "copyfiles -d 2 'src/.html' dist",
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
